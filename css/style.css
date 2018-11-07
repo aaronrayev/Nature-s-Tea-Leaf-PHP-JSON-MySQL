@@ -1,0 +1,28 @@
+.c2 {max-width: 900px; margin: 10px auto; float:left; width:45%; }
+.c3 {max-width: 900px; margin: 10px auto; float:left; width:33.33%; }
+.c4 {max-width: 900px; margin: 10px auto; float:left; width:50%; }
+
+@media screen and (max-width: 500px) {
+    .c2 { float:none; width:100%; }
+    .c3 { float:none; width:100%; }
+    .c4 { float:none; width:100%; }
+}
+
+.container{
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.container2{
+    max-width: 900px;
+    margin: 10px auto;
+}
+.responsive {
+    max-width: 100%;
+    height:auto;
+}
+h2 {
+ font-family: Garamond;
+ color:darkcyan ;
+ /*font-size: (Whatever size you want);*/
+ }
