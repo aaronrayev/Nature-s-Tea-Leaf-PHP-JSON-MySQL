@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Project-2 Reference</title>
+	<title>Project-2 Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
@@ -10,20 +10,20 @@
     <link rel="icon" href="img/leaf-favion.jpg">
 	<!--Some custom CSS for reference only-->
 	<style type="text/css">
-		/*.cola, .colb, .colc{
+		.cola, .colb, .colc{
 			border: 1px #000 solid;
-		}*/
+		}
 
 		.cola {
-			background: #fff;
+			background: #aaa;
 		}
 
 		.colb {
-			background: #fff;
+			background: #bbb;
 		}
 
 		.colc {
-			background: #fff;
+			background: #ccc;
 		}
 
 		.carousel-inner>.item>img {
@@ -40,7 +40,7 @@
 
 		@media screen and (max-width: 900px) {
 			.cola p, .colb p, .colc p{
-				color: #333;
+				color: #fff;
 			}
 		}
 	</style>
@@ -68,7 +68,6 @@
 	</nav>
 
 
-
 	<!--carousel-->
 	<div class="fluid-container">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -76,31 +75,31 @@
 			<ol class="carousel-indicators">
 				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				<!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
 			</ol>
 			<!-- wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<!--slide 1-->
 				<div class="item active">
-					<img src="img/banner_slide12.jpg">
+					<img src="img/wall1.jpg">
 					<div class="carousel-caption">
-						<!--<p>Luthur</p>-->
+						<p>Luthur</p>
 					</div>
 				</div>
 				<!--slide 2-->
 				<div class="item">
-					<img src="img/weightloss_banner2.jpg">
+					<img src="img/wall2.jpg">
 					<div class="carousel-caption">
-						<!--<p>Sherlock</p>-->
+						<p>Sherlock</p>
 					</div>
 				</div>
 				<!--slide 3-->
-				<!--<div class="item">
+				<div class="item">
 					<img src="img/wall3.jpg">
 					<div class="carousel-caption">
 						<p>Penny Dreadful</p>
 					</div>
-				</div>-->
+				</div>
 			</div>
 			<!-- controls -->
 			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -118,229 +117,35 @@
 
 	<!--Grid-->
 	<!--start with container-->
-	
+	<div class="container">
+		<h2 class="text-uppercase">Grid</h2>
+		<!--then a row-->
+		<div class="row">
+			<!--then columns-->
+			<div class="col-xs-4">
+				<p>column 1</p>
+			</div>
+			<div class="col-xs-4">
+				<p>column 2</p>
+			</div>
+			<div class="col-xs-4">
+				<p>column 3</p>
+			</div>
+		</div>
+	</div>
 	<!--Another Example Grid-->
 	<div class="container">
-        <h2 align="center">OUR RECOMMEDATIONS AND BEST SELLERS</h2>
 		<div class="row">
-			<div class="col-md-4 cola" style="height: 250px;">
-				<h4 align="center"><img src="img/YerbaMate.png" width="200" class="responsive"><br>
-                    Organic Yerba Mate</h4>
-                <div class="row text-center">
-			
-			<!--modal popup-->
-			<!--button to trigger modal-->
-			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
-				Description
-			</button>
-
-			<!--modal container -->
-			<div class="modal fade" id="myModal" role="dialog">
-				<div class="modal-dialog">
-					<!-- modal content-->
-					<div class="modal-content">
-						<!-- modal header-->
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title">Organic Yerba Mate</h4>
-						</div>
-						<!-- modal body-->
-						<div class="modal-body">
-							<p>Organic Guayaki Yerba Mate Tea is made from mate, a species of holly native to South America. It is mainly grown and processed in northern Argentina, Paraguay, Uruguay and southern Brazil. Cultivators of Yerba Mate are known as yerbateros. Traditionally, mate is consumed with friends who drink from a shared hollow gourd known as a guampa or porongo using a metal straw or bomba. This is a common social practice among people of all ages in Uruguay, the largest consumer of mate. The health benefits of Yerba Mate are many. It contains xanthenes which can boost your metabolic rate and help decrease mental and physical fatigue while aiding in losing unwanted weight. Yerba Mate is an excellent source of magnesium which is proven to ease anxiety as well as antioxidants to boost the immune system and protect against colds and flu.</p>
-						</div>
-						<!-- modal footer-->
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
+			<div class="col-md-6 cola">
+				<p>column 4</p>
 			</div>
-                
+			<div class="col-md-3 colb">
+				<p>column 5</p>
 			</div>
-            </div>
-			
-			<div class="col-md-4 colb"  style="height: 250px;">
-				<h4 align="center"><img src="img/stevia.png" width="200" class="responsive"><br>
-                   Organic Stevia Leaf </h4>
-                <div class="row text-center">
-			
-			<!--modal popup-->
-			<!--button to trigger modal-->
-			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">
-				Description
-			</button>
-
-			<!--modal container -->
-			<div class="modal fade" id="myModal2" role="dialog">
-				<div class="modal-dialog">
-					<!-- modal content-->
-					<div class="modal-content">
-						<!-- modal header-->
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title">Organic Stevia Leaf</h4>
-						</div>
-						<!-- modal body-->
-						<div class="modal-body">
-							<p>Organic Stevia Leaf Sugar Substitute: Stevia, also known as sweet leaf and sugar leaf, is native to Paraguay and other tropical regions of South America. It has been grown for hundreds of years specifically for its sweet leaves. The glycosides which give stevia its intense sweetness can make these leaves as much as 200 times sweeter than sugar with a slower onset and longer duration. The stevia leaf has also been found to contain numerous vitamins and nutrients such as vitamins A & C, potassium, phosphorous and zinc. Being lauded as the sweetener of the future, this calorie free natural sweetener will allow you to enjoy your favorite Nature’s Tea Leaf teas and iced teas as sweet as you like them without the worry of added calories.</p>
-						</div>
-						<!-- modal footer-->
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
+			<div class="col-md-3 colc">
+				<p>column 6</p>
 			</div>
-                
-			</div>
-            </div>
-                
-			<div class="col-md-4 colb"  style="height: 250px;">
-				<h4 align="center"><img src="img/silverneedle.png" width="200" class="responsive"><br>
-                    Organic Silver Needle White Tea</h4>
-                <div class="row text-center">
-			
-			<!--modal popup-->
-			<!--button to trigger modal-->
-			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">
-				Description
-			</button>
-
-			<!--modal container -->
-			<div class="modal fade" id="myModal3" role="dialog">
-				<div class="modal-dialog">
-					<!-- modal content-->
-					<div class="modal-content">
-						<!-- modal header-->
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title">Organic Silver Needle White Tea</h4>
-						</div>
-						<!-- modal body-->
-						<div class="modal-body">
-							<p>Organic Silver Needle White Tea has exquisitely shaped buds enveloped in white down. This white tea excites with its savory aroma, rich body and a sweet flavor with rounded finish that is soft and airy on the palate. White Teas which include our Organic Silver Needle variety are known to promote weight loss and stimulate the metabolism. This low caffeine antioxidant packed tea is delicious hot or cold and can be enjoyed any time of day.</p>
-						</div>
-						<!-- modal footer-->
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-                
-			</div>
-            </div>
-        </div>
-        
-        <div class="row">
-			<div class="col-md-4 cola" style="height: 250px;">
-				<h4 align="center"><img src="img/fruit-fusion.png" width="200" class="responsive"><br>
-                   Fruit Fusion Green Tea </h4>
-                <div class="row text-center">
-			
-			<!--modal popup-->
-			<!--button to trigger modal-->
-			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">
-				Description
-			</button>
-
-			<!--modal container -->
-			<div class="modal fade" id="myModal4" role="dialog">
-				<div class="modal-dialog">
-					<!-- modal content-->
-					<div class="modal-content">
-						<!-- modal header-->
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title">Fruit Fusion Green Tea</h4>
-						</div>
-						<!-- modal body-->
-						<div class="modal-body">
-							<p>Fruit Fusion Green Tea is a harmonious fusion of Eastern and Western flavors. This tea has a tart, fresh aroma with a zesty and fruity flavor that cools and refreshes your body. Our Fruit Fusion Green Tea combines a quality Sencha green tea with genuine dried pieces of Rosehip, Hibiscus (a Chinese flower and natural source of many vitamins including C, A, and D), and orange peel. The Sencha tea leaves are loose, green tea leaves with a flat, smooth, and narrow body. When infused, the tea has a sweet and sour aroma. A refreshing drink that can be enjoyed hot or cold.</p>
-						</div>
-						<!-- modal footer-->
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-                
-			</div>
-            </div>
-			
-			<div class="col-md-4 colb"  style="height: 250px;">
-				<h4 align="center"><img src="img/ginseng.png" width="200" class="responsive"><br>
-                    Ginseng Oolong Tea</h4>
-                <div class="row text-center">
-			
-			<!--modal popup-->
-			<!--button to trigger modal-->
-			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">
-				Description
-			</button>
-
-			<!--modal container -->
-			<div class="modal fade" id="myModal5" role="dialog">
-				<div class="modal-dialog">
-					<!-- modal content-->
-					<div class="modal-content">
-						<!-- modal header-->
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title">Ginseng Oolong Tea</h4>
-						</div>
-						<!-- modal body-->
-						<div class="modal-body">
-							<p>Ginseng Oolong Tea takes loose oolong leaves and blends them with ginseng. The oolong tea leaves are mixed with powdered Ginseng and Liquorice Grass, naturally withered under the strong sun, oxidized, and then wrap rolled into granular shape. The many health benefits associated with Ginseng Ooolong Tea include lowered blood pressure and cholesterol levels and an increase in both physical and mental stamina. Our Ginseng Oolong tea has a bouquet aroma and a sweet, fruity flavor that can be served hot or cold.</p>
-						</div>
-						<!-- modal footer-->
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-                
-			</div>
-            </div>
-                
-			<div class="col-md-4 colb"  style="height: 250px;">
-				<h4 align="center"><img src="img/rosebud.png" width="200" class="responsive"><br>
-                    Rose Bud Herbal Tea</h4>
-                <div class="row text-center">
-			
-			<!--modal popup-->
-			<!--button to trigger modal-->
-			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">
-				Description
-			</button>
-
-			<!--modal container -->
-			<div class="modal fade" id="myModal6" role="dialog">
-				<div class="modal-dialog">
-					<!-- modal content-->
-					<div class="modal-content">
-						<!-- modal header-->
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title">Rose Bud Herbal Tea</h4>
-						</div>
-						<!-- modal body-->
-						<div class="modal-body">
-							<p>Rose Bud Herbal Tea is 100% natural whole dried rose buds harvested in their adolescent stage. The tea leaves are deep, olive green and have a natural shape with bright, plump, healthy rose buds. For thousands of years rosebud tea has been a part of Chinese medicine. Rosebuds have been found to contain vitamin C which has been shown to boost the immune system and promote healthy skin and bones. Our Rose Bud Herbal Tea has a captivating scent and when infused, the tea liquid is evenly pink with an aromatic, sweet flavor that can be enjoyed hot or cold.</p>
-						</div>
-						<!-- modal footer-->
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-                
-			</div>
-            </div>
-        </div>
+		</div>
 		<div class="row">
 			<div class="col-sm-2 col-sm-push-10 cola">
 				<p>column 7</p>
@@ -353,13 +158,13 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-4 cola">
+			<div class="col-xs-6 cola">
 				<p>column 10</p>
 			</div>
-			<div class="col-xs-4 colb">
+			<div class="col-xs-3 colb">
 				<p>column 11</p>
 			</div>
-			<div class="col-xs-4 colc">
+			<div class="col-xs-3 colc">
 				<p>column 12</p>
 			</div>
 		</div>
@@ -494,13 +299,13 @@
 						<div class="panel-heading">
 							<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-									Black Tea Selections
+									Collapsible Group 1
 								</a>
 							</h4>
 						</div>
 						<div id="collapse1" class="panel-collapse collapse in">
 							<div class="panel-body">
-                                <img src="img/black-tea.jpg" class="responsive">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 							</div>
 						</div>
 					</div>
@@ -508,13 +313,13 @@
 						<div class="panel-heading">
 							<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-									Green Tea Selections
+									Collapsible Group 2
 								</a>
 							</h4>
 						</div>
 						<div id="collapse2" class="panel-collapse collapse">
 							<div class="panel-body">
-                                <img src="img/Green-Tea.jpg" class="responsive">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 							</div>
 						</div>
 					</div>
@@ -522,78 +327,54 @@
 						<div class="panel-heading">
 							<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-									White Tea Selections
+									Collapsible Group 3
 								</a>
 							</h4>
 						</div>
 						<div id="collapse3" class="panel-collapse collapse">
 							<div class="panel-body">
-								<img src="img/white-tea.jpg" class="responsive">
-							</div>
-						</div>
-					</div>
-                    <div class="panel panel-default">
-						<div class="panel-heading">
-							<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-									Herbal Tea Selections
-								</a>
-							</h4>
-						</div>
-						<div id="collapse4" class="panel-collapse collapse">
-							<div class="panel-body">
-								<img src="img/herbal-tea.jpg" class="responsive">
-							</div>
-						</div>
-					</div>
-                    <div class="panel panel-default">
-						<div class="panel-heading">
-							<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-									Oolong Tea Selections
-								</a>
-							</h4>
-						</div>
-						<div id="collapse5" class="panel-collapse collapse">
-							<div class="panel-body">
-								<img src="img/oolong-tea.jpg" class="responsive">
-							</div>
-						</div>
-					</div>
-                    <div class="panel panel-default">
-						<div class="panel-heading">
-							<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
-									Pu-erh Tea Selections
-								</a>
-							</h4>
-						</div>
-						<div id="collapse6" class="panel-collapse collapse">
-							<div class="panel-body">
-								<img src="img/puerh-tea.jpg" class="responsive">
-							</div>
-						</div>
-					</div>
-                    <div class="panel panel-default">
-						<div class="panel-heading">
-							<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
-									Iced Tea Selections
-								</a>
-							</h4>
-						</div>
-						<div id="collapse7" class="panel-collapse collapse">
-							<div class="panel-body">
-								<img src="img/iced-tea.jpg" class="responsive">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 							</div>
 						</div>
 					</div>
 				</div>
-    </div>
-                
 
-	
-	
+	</div>
+	<div class="container">
+		<div class="row text-center">
+			<h2 class="text-uppercase">Modals</h2>
+
+			<!--modal popup-->
+			<!--button to trigger modal-->
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+				Open Modal
+			</button>
+
+			<!--modal container -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+					<!-- modal content-->
+					<div class="modal-content">
+						<!-- modal header-->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Modal Header</h4>
+						</div>
+						<!-- modal body-->
+						<div class="modal-body">
+							<p>Some text in the modal.</p>
+						</div>
+						<!-- modal footer-->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
 	<div class="container">
 		<h2 class="text-uppercase">Dynamic Tabs</h2>
 
@@ -623,6 +404,6 @@
 	</div>
 
 	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>
