@@ -27,9 +27,7 @@ h2 {
  /*font-size: (Whatever size you want);*/
  }
 
-.paralax {
-        background: url('../img/Brewing-13.jpg') no-repeat center;
-        background-size: cover;
-        background-attachment: fixed;
-        height: 350px;
+.parallax {
+    min-height: 500px;
+    background: transparent;
 }
