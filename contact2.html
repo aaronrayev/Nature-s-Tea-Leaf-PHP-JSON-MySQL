@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/environment-icon-png-7.png">
+</head>
+<body>
+<form role="form">
+        <div class="form-group">
+          <label for="Company" class="col-sm-3 control-label">Company:</label>
+          <div class="col-sm-9">
+            <input type="text" name="Company" id="Company" size="50" maxlength="100" class="form-control" placeholder="Companyt">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="Department" class="col-sm-3 control-label">Department:</label>
+          <div class="col-sm-9">
+            <input type="text" name="Department" id="Department" size="50" maxlength="100" class="form-control" placeholder="Department">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="Username" class="col-sm-3 control-label">Name:</label>
+          <div class="col-sm-9">
+            <input type="text" name="Username" id="Username" size="50" maxlength="100" class="form-control" placeholder="Username">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="Address" class="col-sm-3 control-label">Address:</label>
+          <div class="col-sm-9">
+            <input type="text" name="Address" id="Address" size="50" maxlength="100" class="form-control" placeholder="Address">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="TEL" class="col-sm-3 control-label">TEL:</label>
+          <div class="col-sm-9">
+            <input type="text" name="TEL" id="TEL" size="50" maxlength="100" class="form-control" placeholder="TEL">
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary btn-block enduserinfobtn" id="submitBtn" data-toggle="modal" data-target="#myModal" value="Submit">Submit</button>
+</form>
+<!-- ########## Start Modal Section ########## -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Confirm your entry</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+              <div class="entryname col-xs-3 ">Company:</div>
+              <div class="entrydata col-xs-9" id="mCompany"></div>
+              </div>
+              <div class="row">
+              <div class="entryname col-xs-3">Department:</div>
+              <div class="entrydata col-xs-9" id="mDepartment"></div>
+              </div>
+              <div class="row">
+              <div class="entryname col-xs-3">Name:</div>
+              <div class="entrydata col-xs-9" id="mUsername"></div>
+              </div>
+              <div class="row">
+              <div class="entryname col-xs-3">Address:</div>
+              <div class="entrydata col-xs-9" id="mAddress"></div>
+              </div>
+              <div class="row">
+              <div class="entryname col-xs-3">TEL:</div>
+              <div class="entrydata col-xs-9" id="mTEL"></div>
+              </div>
+              <div class="row">
+              <div class="entryname col-xs-3">Email:</div>
+              <div class="entrydata col-xs-9" id="mEmail"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="modal-footer">
+              <div class="col-xs-6"><button class="btn btn-block btn-default" data-dismiss="modal">Cancel</button></div>
+              <div class="col-xs-6"><button class="btn btn-block btn-primary">Submit</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ########## End Modal Section ########## -->
+	<script>
+
+		var all = "";
+    $('#submitBtn').click(function () {
+    /* when the button in the form, 
+    display the entered values in the modal */
+    //console.log($("from input"));
+    all = "";
+    $.each($("form input"),function(i,v){
+    var id= $(this).attr('id');
+    	//console.log(id);
+      //console.log("#m"+id);
+    	$("#m"+id).text($(this).val());
+      all = all + $(this).val();
+    });
+    hideEmptyInputs();    
+  });
+  $('#myModal').on('show.bs.modal', function (e) {
+          if(all == ""){
+          	e.preventDefault();
+          }
+    })
+    
+  function hideEmptyInputs(){
+  	//console.log($("#myModal div"));
+  	//console.log($("#myModal div[id^=m]"));
+    $.each($("#myModal div[id^=m]"),function(i,v){
+    	//console.log($(this).text());
+      var value = $(this).text();
+      if(value == ""){
+      	//Hide if empty
+        $(this).parent().css('display','none');
+      }else{
+        $(this).parent().css('display','block');      
+      }
+    });
+  	//console.log("algo");
+  }
+	</script>
+</body>
+</html>
