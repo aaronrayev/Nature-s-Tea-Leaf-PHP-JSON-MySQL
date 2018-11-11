@@ -43,6 +43,24 @@
 				color: #333;
 			}
 		}
+        /* mouse over enlarge */
+        h1.head {
+        text-align: center;
+        font-size: 26px;
+        }
+                .img_section figure img {
+                    transform: scale(1);
+                    transition: .3s ease-in-out;
+                    height: 300;
+                    width: 200;  			
+                }
+                .img_section figure:hover img {
+                    transform: scale(1.6);
+                }
+                h2.zoom {
+            padding-bottom: 33px;
+            padding-left: 25px;
+        }
         
 	</style>
 </head>
@@ -118,15 +136,16 @@
 
 
 
-	<!--Grid-->
-	<!--start with container-->
-	
-	<!--Another Example Grid-->
-	<div class="container">
+    
+    <div class="container">
         <h2 class="text-uppercase" align="center">Our Recommendations And Best Sellers</h2>
+        <h6 align="center">mouse over pictures to enlarge</h6>
 		<div class="row">
+            
 			<div class="col-md-4 cola" style="height: 250px;">
-				<h4 align="center"><img src="img/YerbaMate.png" width="200" class="responsive"><br>
+				<h4 align="center" class="zoom">
+                    <div class="img_section">
+                        <figure><img class="img_section2" src="img/YerbaMate.png" width="200" class="responsive"></figure><br>
                     Organic Yerba Mate</h4>
                 <div class="row text-center">
 			
@@ -162,7 +181,9 @@
             </div>
 			
 			<div class="col-md-4 colb"  style="height: 250px;">
-				<h4 align="center"><img src="img/stevia.png" width="200" class="responsive"><br>
+				<h4 align="center" class="zoom">
+                    <div class="img_section">
+                        <figure><img src="img/stevia.png" width="200" class="responsive"></figure><br>
                    Organic Stevia Leaf </h4>
                 <div class="row text-center">
 			
@@ -198,7 +219,9 @@
             </div>
                 
 			<div class="col-md-4 colb"  style="height: 250px;">
-				<h4 align="center"><img src="img/silverneedle.png" width="200" class="responsive"><br>
+				<h4 align="center" class="zoom">
+                    <div class="img_section">
+                        <figure><img src="img/silverneedle.png" width="200" class="responsive"></figure><br>
                     Organic Silver Needle White Tea</h4>
                 <div class="row text-center">
 			
@@ -236,7 +259,9 @@
         
         <div class="row">
 			<div class="col-md-4 cola" style="height: 250px;">
-				<h4 align="center"><img src="img/fruit-fusion.png" width="200" class="responsive"><br>
+				<h4 align="center" class="zoom">
+                    <div class="img_section">
+                        <figure><img src="img/fruit-fusion.png" width="200" class="responsive"></figure><br>
                    Fruit Fusion Green Tea </h4>
                 <div class="row text-center">
 			
@@ -272,7 +297,9 @@
             </div>
 			
 			<div class="col-md-4 colb"  style="height: 250px;">
-				<h4 align="center"><img src="img/ginseng.png" width="200" class="responsive"><br>
+				<h4 align="center" class="zoom">
+                    <div class="img_section">
+                        <figure><img src="img/ginseng.png" width="200" class="responsive"></figure><br>
                     Ginseng Oolong Tea</h4>
                 <div class="row text-center">
 			
@@ -308,7 +335,9 @@
             </div>
                 
 			<div class="col-md-4 colb"  style="height: 250px;">
-				<h4 align="center"><img src="img/rosebud.png" width="200" class="responsive"><br>
+				<h4 align="center" class="zoom">
+                    <div class="img_section">
+                        <figure><img src="img/rosebud.png" width="200" class="responsive"></figure><br>
                     Rose Bud Herbal Tea</h4>
                 <div class="row text-center">
 			
@@ -366,7 +395,7 @@
 			</div>
 		</div>-->
 	</div>
-    
+    <br>
         <div class="container" style="text-align: center;">
         <a href="contact.html" class="btn btn-danger btn-lg">Contact Us Now</a>
         
@@ -406,7 +435,7 @@
         <a href="contact.html" class="btn btn-danger btn-lg">Contact Us Now</a>
         
     </div>
-		
+	<br>	
 	<div class="container">
 		<h2 class="text-uppercase" align="center">Our Full Selection</h2>
 
