@@ -43,6 +43,25 @@
 				color: #fff;
 			}
 		}
+         /* mouse over enlarge */
+        h1.head {
+        text-align: center;
+        font-size: 26px;
+        }
+                .img_section figure img {
+                    transform: scale(1);
+                    transition: .3s ease-in-out;
+                    height: 300;
+                    width: 200;  			
+                }
+                .img_section figure:hover img {
+                    transform: scale(1.6);
+                }
+                h2.zoom {
+            padding-bottom: 33px;
+            padding-left: 25px;
+        }
+        
 	</style>
 </head>
 
@@ -51,7 +70,7 @@
 
 
 	<!--mobile friendly hamburger menu-->
-	<nav class="navbar navbar-default affix-top">
+	<nav class="navbar navbar-default affix-top fixed" style="position:sticky; width:100%; overflow: hidden; top: 0; z-index:999;">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
 				<span class="glyphicon glyphicon-menu-hamburger"></span>
@@ -404,6 +423,6 @@
 	</div>
 
 	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
