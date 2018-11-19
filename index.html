@@ -78,6 +78,28 @@
        /* a:hover {
             font-style: italic;
         }*/
+        @-webkit-keyframes pulsate {
+  0% { width:100px; }
+  5% { width:150px; left:-25px; }
+  10% { width:100px; left:0px; }
+  15% { width:150px; left:-25px; }
+  20% { width:100px; left:0px; }
+  
+  40% { width:100px; background-color:#38374A; }
+  45% { width:150px; left:-25px; background-color:#38374A; }
+  50% { width:100px; left:0px; background-color:#38374A; }
+  55% { width:150px; left:-25px; background-color:#38374A; }
+  60% { width:100px; left:0px; background-color:#38374A; }
+ 
+  80% { width:100px; background-color:#45002D; }
+  100% { width:100px; background-color:#45002D; }
+}
+ 
+.css3_pulsate:hover {
+  -webkit-animation-name: pulsate;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+
 	</style>
 </head>
 
@@ -424,9 +446,10 @@
 	</div>
     <br>
         <div class="container" style="text-align: center;">
-        <a href="contact.html" class="btn btn-danger btn-lg">Contact Us Now</a>
         
-    </div>
+            <a href="contact.html" class="btn btn-danger btn-lg" style="box-shadow: 3px 3px  #888888;">Contact Us Now</a>
+       
+        </div>
     <br>
     <h2 class="text-uppercase" align="center">The Health Benefits of Drinking Tea</h2>
                 
@@ -462,7 +485,7 @@
     </div>
     <br>
     <div class="container" style="text-align: center;">
-        <a href="contact.html" class="btn btn-danger btn-lg">Contact Us Now</a>
+        <a href="contact.html" class="btn btn-danger btn-lg" style="box-shadow: 3px 3px  #888888;">Contact Us Now</a>
         
     </div>
 	<br>	
