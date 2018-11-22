@@ -65,7 +65,63 @@
         .ul li a{
             font-family: fantasy;
         }
-        
+
+        body {
+  margin: 0;
+  padding: 0;
+/*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+  background: #333;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* The only rule that matters */
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+/* These just style the content */
+article {
+/*  just a fancy border  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  margin: 10px;
+}
+
+h1 {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  font-size: 36px;
+  letter-spacing: 3px;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  text-align: center;
+}
+
+h1 span {
+  font-family: sans-serif;
+  letter-spacing: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h1 span a {
+  color: #fff;
+}
 	</style>
 </head>
 
@@ -91,11 +147,12 @@
 	</nav>
     </header>
     <content>
-        <video src="video/stock-footage-growing-green-tea-field-with-mt-fuji-tilt-up-japan.webm" autoplay loop width="100%"></video>
+        <video id="video-background" autoplay loop muted width="100%" opacity="1.2">
+        <source src="video/stock-footage-growing-green-tea-field-with-mt-fuji-tilt-up-japan.webm"></video>
         <div id="black">
     <a name="black-tea"></a>
     <table><tr><td height="50px"></td></tr></table>
-	<div class="container">
+	<div class="container" style="font-family:monospace; font-size: 16px; color: cadetblue; background:white; opacity:0.8">
         
 		<h2 class="text-uppercase">Black Tea</h2>
 
@@ -112,7 +169,7 @@
 			<div id="black-benefits" class="tab-pane fade in active">
 				<!--<h3>Health Benefits</h3>-->
                 &nbsp;
-				<p style="font-family:monospace; font-size: 16px;">Black tea is known to banish fatigue, stimulate mental alertness, and raise energy levels. It has been shown to reduce stress hormone levels and acts as a nerve sedative, frequently relieving headaches.</p>
+				<p>Black tea is known to banish fatigue, stimulate mental alertness, and raise energy levels. It has been shown to reduce stress hormone levels and acts as a nerve sedative, frequently relieving headaches.</p>
                 <p style="font-family:monospace; font-size: 16px;">Black tea is known for its antiviral and antibacterial properties. It can be topically applied to cuts, bruises and burns, and is famous for its sunburn relief and has been shown to have a positive effect on preventing tooth decay and gum disease.<br>
                 &nbsp;</p>
                 <p style="font-family:monospace; font-size: 13px; color:darkcyan; font-style: italic;"><img src="img/Green_Leaf_Transparent.png" height="15px">&nbsp;Nurtures Digestive Health</p>
@@ -133,7 +190,7 @@
 	</div>
     <a name="green-tea"></a>
     <table><tr><td height="50px"></td></tr></table>
-    	<div class="container">
+    	<div class="container" style="font-family:monospace; font-size: 16px; color: cadetblue; background:white; opacity:0.8">
 		<h2 class="text-uppercase">Green Tea</h2>
 
 		<!--tabs-->
@@ -168,7 +225,7 @@
 	</div>
         <a name="white-tea"></a>
         <table><tr><td height="50px"></td></tr></table>
-    	<div class="container">
+    	<div class="container" style="font-family:monospace; font-size: 16px; color: cadetblue; background:white; opacity:0.8">
 		<h2 class="text-uppercase">White Tea</h2>
 
 		<!--tabs-->
@@ -204,7 +261,7 @@
 	</div>
             <a name="herbal-tea"></a>
             <table><tr><td height="50px"></td></tr></table>
-    	<div class="container">
+    	<div class="container" style="font-family:monospace; font-size: 16px; color: cadetblue; background:white; opacity:0.8">
 		<h2 class="text-uppercase">Herbal Tea</h2>
 
 		<!--tabs-->
@@ -239,7 +296,7 @@
 	</div>
                 <a name="oolong-tea"></a>
                 <table><tr><td height="50px"></td></tr></table>
-    	<div class="container">
+    	<div class="container" style="font-family:monospace; font-size: 16px; color: cadetblue; background:white; opacity:0.8">
 		<h2 class="text-uppercase">Oolong Tea</h2>
 
 		<!--tabs-->
@@ -277,7 +334,7 @@
 	</div>
             <a name="puerh-tea"></a>
             <table><tr><td height="50px"></td></tr></table>
-    	<div class="container">
+    	<div class="container" style="font-family:monospace; font-size: 16px; color: cadetblue; background:white; opacity:0.8">
 		<h2 class="text-uppercase">Pu-erh Tea</h2>
 
 		<!--tabs-->
@@ -313,7 +370,7 @@
 	</div>
         <a name="iced-tea"></a>    
         <table><tr><td height="50px"></td></tr></table>
-    	<div class="container">
+    	<div class="container" style="font-family:monospace; font-size: 16px; color: cadetblue; background:white; opacity:0.8">
 		<h2 class="text-uppercase">Iced Tea</h2>
 
 		<!--tabs-->
@@ -359,7 +416,7 @@
     <table><tr><td height="50px"></td></tr></table>
     <footer style="align-content: center;">
     <div class="container"  style="text-align: center;">
-        <small>Copyright © 2018 All rights reserved.</small>
+        <small><font color="white">Copyright © 2018 All rights reserved.</font></small>
         
     </div>
     </footer>
